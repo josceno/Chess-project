@@ -28,11 +28,11 @@ public class Board {
         }
         return pieces[row][column];
     }
-    public Piece piece(Position position){
-        if(!positionExists(position)){
+    public Piece piece(Position source){
+        if(!positionExists(source)){
             throw new BoardExeption("Position not in the board");
         }
-        return pieces[position.getRow()][position.getColumn()];
+        return pieces[source.getRow()][source.getColumn()];
     }
     public void placePiece(Piece piece, Position position){
         if(thereIsAPiece(position)){
