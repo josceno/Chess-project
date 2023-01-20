@@ -34,18 +34,16 @@ public class Program {
     
                 ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
 
-                if(captured != null){
+                if(capturedPiece != null){
                     captured.add(capturedPiece);
                 }
 
             }catch(ChessException e){
                 System.out.print(e.getMessage());
                 input.nextLine();
-            }catch(InputMismatchException e){
-                System.out.print(e.getMessage());
+            }catch (InputMismatchException e) {
+                System.out.println(e.getMessage());
                 input.nextLine();
-            }catch(NullPointerException e){
-                System.out.println();
             }
            
         }
