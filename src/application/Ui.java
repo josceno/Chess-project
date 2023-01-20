@@ -1,7 +1,11 @@
 package src.application;
 
+import java.util.Arrays;
 import java.util.InputMismatchException;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 import src.Chess.ChessException;
 import src.Chess.ChessMatch;
@@ -47,8 +51,10 @@ public class Ui {
             }   
     }
 
-    public static void printMatch(ChessMatch chessMatch){
+    public static void printMatch(ChessMatch chessMatch, List<ChessPiece> captured){
         printBoard(chessMatch.getPiece());
+        System.out.println();
+        printCapturedPieces(captured);
         System.out.println();
         System.out.println("trun: " +chessMatch.getTurn());
         System.out.println("Waiting player: "+chessMatch.getCurrentPlayer());
@@ -89,4 +95,18 @@ public class Ui {
         }
         System.out.print(" ");
 	}
+    private static void printCapturedPieces(List<ChessPiece> captured){
+        
+        List<Piece> white = captured.stream().filter(x -> x.getColor() == Colors.WHITE).collect(Collectors.toList());
+        List<Piece> black = captured.stream().filter(x -> x.getColor() == Colors.BLACK).collect(Collectors.toList());
+        
+        System.out.println("White: ");
+        System.out.println(ANSI_WHITE);
+        System.out.println(Arrays.toString(white.toArray()));
+        System.out.println(ANSI_RESET);
+        System.out.println("Black: ");
+        System.out.println(ANSI_YELLOW);
+        System.out.println(Arrays.toString(black.toArray()));
+        System.out.println(ANSI_RESET);
+    }
 }
