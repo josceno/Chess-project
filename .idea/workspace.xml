@@ -8,10 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessProject/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessProject/src/Chess/ChessMatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessProject/src/Chess/ChessMatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessProject/src/Pieces/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessProject/src/Pieces/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ChessProject/src/Pieces/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessProject/src/Pieces/Rook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessProject/src/application/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessProject/src/application/Program.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ChessProject/src/application/Ui.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ChessProject/src/application/Ui.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chess/ChessMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chess/ChessMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pieces/Pawn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Ui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Ui.java" afterDir="false" />
     </list>
@@ -19,6 +19,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -33,6 +36,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
   <component name="ProjectId" id="2KJwqvjMXPnAK07TvaM66GXHs4s" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -41,19 +47,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "E:/projetos de código/Java/Chess-project"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/projetos de código/Java/Chess-project&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.application.Program" />
+      <module name="ChessProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Program" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
