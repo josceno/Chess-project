@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import src.Pieces.Bishop;
 import src.Pieces.King;
 import src.Pieces.Pawn;
 import src.Pieces.Rook;
@@ -198,8 +199,10 @@ public class ChessMatch {
         placeNewPiece('a',1, new Rook(board,Colors.WHITE));
         placeNewPiece('e',1, new King(board,Colors.WHITE));
         placeNewPiece('h',1, new Rook(board,Colors.WHITE));
+        placeNewPiece('c',1, new Bishop(board,Colors.WHITE));
         placeNewPiece('a',2, new Pawn(board,Colors.WHITE));
         placeNewPiece('b',2, new Pawn(board,Colors.WHITE));
+        placeNewPiece('f',1, new Bishop(board,Colors.WHITE));
         placeNewPiece('c',2, new Pawn(board,Colors.WHITE));
         placeNewPiece('d',2, new Pawn(board,Colors.WHITE));
         placeNewPiece('e',2, new Pawn(board,Colors.WHITE));
@@ -210,6 +213,8 @@ public class ChessMatch {
         placeNewPiece('a',8, new Rook(board,Colors.BLACK));
         placeNewPiece('e',8, new King(board,Colors.BLACK));
         placeNewPiece('h',8, new Rook(board,Colors.BLACK));
+        placeNewPiece('c',8, new Bishop(board,Colors.BLACK));
+        placeNewPiece('f',8, new Bishop(board,Colors.BLACK));
         placeNewPiece('a',7, new Pawn(board,Colors.BLACK));
         placeNewPiece('b',7, new Pawn(board,Colors.BLACK));
         placeNewPiece('c',7, new Pawn(board,Colors.BLACK));
