@@ -50,10 +50,6 @@ public class Program {
         }
         Ui.clearScreen();
         Ui.printMatch(chessMatch, captured);
-        
-
-
-
     }
 
  
