@@ -98,7 +98,7 @@ public class ChessMatch {
         }else{
             nextTurn();
         }
-        if(movedPiece instanceof Pawn && (target.getRow() == source.getRow()-2)|| (target.getRow() == source.getRow()-2)){
+        if(movedPiece instanceof Pawn && (target.getRow() == source.getRow()-2)|| (target.getRow() == source.getRow()+2)){
             enPassantVunereble = movedPiece;
         }
         else{
