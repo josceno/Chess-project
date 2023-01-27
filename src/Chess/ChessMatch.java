@@ -98,7 +98,7 @@ public class ChessMatch {
         }else{
             nextTurn();
         }
-        if(movedPiece instanceof Pawn && (target.getRow() == source.getRow()-2)|| (target.getRow() == source.getRow()+2)){
+        if(movedPiece instanceof Pawn && (target.getRow() == source.getRow()-2|| target.getRow() == source.getRow()+2)){
             enPassantVunereble = movedPiece;
         }
         else{
@@ -140,7 +140,7 @@ public class ChessMatch {
             if(source.getColumn() != target.getColumn() && capturedPiece == null){
                 Position pawPosition;
                 if(p.getColor() == Colors.WHITE){
-                    pawPosition = new Position(target.getRow()-1,target.getColumn());
+                    pawPosition = new Position(target.getRow()+1,target.getColumn());
                 }else{
                     pawPosition = new Position(target.getRow()-1,target.getColumn());
                 }

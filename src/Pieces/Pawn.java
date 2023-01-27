@@ -46,7 +46,7 @@ public class Pawn extends ChessPiece {
                 if(getBoard().positionExists(left) && isThereOpponetPiece(left) && getBoard().piece(left) == chessMatch.getEnPessantVunrable()){
                     mat[left.getRow()-1][left.getColumn()]= true;
                 }
-                Position right = new Position(position.getRow(),position.getColumn()-1);
+                Position right = new Position(position.getRow(),position.getColumn()+1);
                 if(getBoard().positionExists(right) && isThereOpponetPiece(right) && getBoard().piece(right) == chessMatch.getEnPessantVunrable()){
                     mat[right.getRow()-1][right.getColumn()]= true;
                 }
@@ -70,7 +70,7 @@ public class Pawn extends ChessPiece {
                 mat[p.getRow()][p.getColumn()] = true;
             }
             if(position.getRow()== 4){
-                Position left = new Position(position.getRow(),position.getColumn()+1);
+                Position left = new Position(position.getRow(),position.getColumn()-1);
                 if(getBoard().positionExists(left) && isThereOpponetPiece(left) && getBoard().piece(left) == chessMatch.getEnPessantVunrable()){
                     mat[left.getRow()+1][left.getColumn()]= true;
                 }
