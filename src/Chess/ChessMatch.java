@@ -136,6 +136,19 @@ public class ChessMatch {
             rook.increaseMoveCount();
 
         }
+        if(p instanceof Pawn){
+            if(source.getColumn() != target.getColumn() && capturedPiece == null){
+                Position pawPosition;
+                if(p.getColor() == Colors.WHITE){
+                    pawPosition = new Position(target.getRow()-1,target.getColumn());
+                }else{
+                    pawPosition = new Position(target.getRow()-1,target.getColumn());
+                }
+                capturedPiece = board.removePiece(pawPosition);
+                capturedPieces.add(capturedPiece);
+                piecesOnTheBoard.remove(capturedPiece);
+            }
+        }
         return capturedPiece;
         
     }
@@ -164,6 +177,20 @@ public class ChessMatch {
             rook.decreaseMoveCount();
 
         }
+        if(p instanceof Pawn){
+            if(source.getColumn() != target.getColumn() && capturedPiece == enPassantVunereble){
+                ChessPiece pawn = (ChessPiece)board.removePiece(target);
+                Position pawPosition;
+                if(p.getColor() == Colors.WHITE){
+                    pawPosition = new Position(3,target.getColumn());
+                }else{
+                    pawPosition = new Position(4,target.getColumn());
+                }
+                board.placePiece(pawn, pawPosition);
+                
+            }
+        }
+
     }
 
     private void validateSourcePosition(Position source) {
