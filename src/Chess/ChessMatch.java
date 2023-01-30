@@ -126,7 +126,7 @@ public class ChessMatch {
             throw new IllegalStateException("Theres no pawn to be promoted");
         }
         if(!type.equals("Q") && !type.equals("B")&& !type.equals("N") && !type.equals("R") ){
-            throw new IllegalStateException("please chose a valid piece like (Q,B,R,N) invalid: "+ type);
+            return promoted;
         }
         Position pos = promoted.getChessPosition().toPosition();
         Piece p = board.removePiece(pos);
